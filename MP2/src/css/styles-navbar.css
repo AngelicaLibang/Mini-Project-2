@@ -1,0 +1,31 @@
+/** @format */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.navbar {
+  box-shadow: 10px;
+  background-color: #ffffff;
+}
+.navbar-brand {
+  margin-right: auto;
+}
+
+/* Add space between navbar items */
+.navbar-nav {
+  margin-left: auto;
+}
+.nav-link:hover {
+  color: #ffffff;
+  background-color: rgb(242, 210, 189);
+}
+/* Style the search bar */
+.search-bar {
+  display: flex;
+  align-items: left;
+  border-radius: 20%;
+}
+
+.search-input {
+  margin-right: 5px;
+}

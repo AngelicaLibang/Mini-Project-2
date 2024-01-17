@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ClickedIn</title>
+
+    <!-- Add Bootstrap CSS link here -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Add Bootstrap JS and Popper.js scripts here -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courier+Prime&family=Inter:wght@100&family=Poppins:wght@100&family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    <script src="nav.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <link rel="icon" href="../img/ClickedinFAV.png" type="image/x-icon" />
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-light fixed-top">
+      <div class="container-fluid">
+        <!-- Logo/Brand -->
+        <a class="navbar-brand" href="#">
+          <img src="../img/Logo2.png" alt="logo" style="width: 150px" />
+        </a>
+
+        <!-- Toggle button for mobile -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar items -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <!-- Added 'ms-auto' to align items to the right -->
+            <li class="nav-item">
+              <form class="form-inline search-bar me-3">
+                <input
+                  class="form-control search-input"
+                  type="search"
+                  placeholder="ex. Women top"
+                  aria-label="Search"
+                />
+                <button id="nav-search" type="submit">Search</button>
+              </form>
+            </li>
+            <!-- ====================== -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li
+                  class="nav-item dropdown"
+                  onmouseover="showDropdown(this)"
+                  onmouseout="hideDropdown(this)"
+                >
+                  <a class="nav-link" href="#">
+                    <img
+                      style="width: 30px"
+                      src="../img/new-profile.png"
+                      alt="profile logo"
+                    />
+                    <div class="dropdown-content">
+                      <a href="#">Account name</a>
+                      <hr />
+                      <a href="#">My Profile</a>
+                      <a href="#">My Orders</a>
+                      <a href="#">My Messages</a>
+                      <a href="#">My Coupons</a>
+                      <a href="#">My Points</a>
+                      <a href="#">Recently viewed</a>
+                      <a href="#">More services</a>
+                      <hr />
+                      <a href="#">Sign out</a>
+                    </div>
+                  </a>
+                </li>
+                <!-- Add similar dropdown code for other items -->
+              </ul>
+            </div>
+
+            <!-- ====================== -->
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <img
+                  style="width: 26px"
+                  src="../img/new-heart.png"
+                  alt="wishlist"
+                />
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <img
+                  style="width: 26px"
+                  src="../img/new-support.png"
+                  alt="service logo"
+                />
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <img
+                  style="width: 26px"
+                  src="../img/new-cart.png"
+                  alt="cart logo"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- space -->
+    <div class="d-flex" style="height: 83px">
+      <div class="vr"></div>
+    </div>
+    <!-- Carousel -->
+    <div
+      id="carouselExampleAutoplaying"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="../img/carousel1.png" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="../img/carousel2.png" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="../img/carousel3.png" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="../img/carousel4.png" class="d-block w-100" alt="..." />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </body>
+</html>

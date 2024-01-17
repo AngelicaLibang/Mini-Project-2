@@ -1,0 +1,71 @@
+/* Add your custom CSS styles here */
+
+/* Center the brand/logo */
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 0px;
+}
+
+.navbar-brand {
+  margin-right: auto;
+}
+
+/* Add space between navbar items */
+.navbar-nav {
+  margin-left: auto;
+}
+
+.nav-link:hover {
+  color: #ffffff;
+  background-color: rgb(242, 210, 189);
+  border-radius: 5px;
+}
+/* Style the search bar */
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  margin-right: 5px;
+}
+
+#nav-search {
+  color: rgb(65, 63, 63);
+  background-color: rgba(239, 221, 209, 0.783);
+  color: black;
+  padding: 7px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: solid;
+  border-color: rgb(229, 229, 229);
+}
+
+#nav-search:hover {
+  background-color: rgb(242, 210, 189);
+  border-radius: 5px;
+}
+
+.navbar {
+  background-color: white;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 300px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 0;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  display: block;
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background-color: rgb(242, 210, 189);
+}
